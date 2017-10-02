@@ -45,7 +45,19 @@ describe 'methods_quiz' do
   		icy_hot(16, 99).must_equal(false)
   	end
   end
+
+
+  describe 'two_as_one' do
+  	it 'returns true if adding two of the three integers gives you the third' do
+  		two_as_one(3, 7, 4).must_equal(true)
+  	end
+
+  	it 'returns false if none of the integers adds to the third' do
+  		two_as_one(4, 6, 7).must_equal(false)
+  	end
+  end
 end
+
 
 
 
