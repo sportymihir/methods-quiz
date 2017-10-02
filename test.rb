@@ -30,6 +30,24 @@ describe 'methods_quiz' do
   		not_string("nothello").must_equal("hello")
   	end
   end
+
+
+  describe 'icy_hot' do
+  	it 'is icy if temperature is below 0, and hot if temperature is above 100. return true if both are true' do
+  		icy_hot(-21, 111).must_equal(true)
+  	end
+
+  	it 'returns false if one is true but the other is false' do
+  		icy_hot(12, 145).must_equal(false)
+  	end
+
+  	it 'returns false if both are false' do
+  		icy_hot(16, 99).must_equal(false)
+  	end
+  end
 end
+
+
+
 	
 
