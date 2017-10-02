@@ -19,5 +19,11 @@ describe 'methods_quiz' do
 	end
   end
 end
+
+
+  # describe 'not_string' do
+  # 	it 'given a string, adds not to the start if the string does not start with not' do
+  # 		not_string("sup").must_equal("notsup")
+  # 	end
 	
 
