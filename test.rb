@@ -18,12 +18,18 @@ describe 'methods_quiz' do
 		has_teen(5, 9 ,11).must_equal(false)
 	end
   end
+
+
+
+  describe 'not_string' do
+  	it 'given a string, adds not to the start if the string does not start with not' do
+  		not_string("sup").must_equal("notsup")
+  	end
+
+  	it 'given a string starting with not, will return original string' do
+  		not_string("nothello").must_equal("hello")
+  	end
+  end
 end
-
-
-  # describe 'not_string' do
-  # 	it 'given a string, adds not to the start if the string does not start with not' do
-  # 		not_string("sup").must_equal("notsup")
-  # 	end
 	
 
